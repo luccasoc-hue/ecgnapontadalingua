@@ -150,7 +150,7 @@ section{position:relative}
 .price-band .sec-title{color:#fff}
 .price-band .sec-title .soft{color:#2c0a52}
 .plans{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;max-width:880px;margin:38px auto 0;align-items:stretch}
-.plan{background:var(--background-gray);border-radius:var(--radius-card);padding:34px 28px;display:flex;flex-direction:column;box-shadow:0 20px 50px rgba(62,7,114,.25)}
+.plan{background:var(--background-gray);border-radius:var(--radius-card);padding:34px 28px;display:flex;flex-direction:column;box-shadow:0 20px 50px rgba(62,7,114,.25);scroll-margin-top:30px}
 .plan.featured{background:#fff;border:3px solid var(--secondary-light);position:relative}
 .plan .badge{position:absolute;top:-16px;left:50%;transform:translateX(-50%);background:var(--gradient-green);color:#fff;font-family:var(--font-button);font-weight:700;font-size:12px;letter-spacing:.5px;text-transform:uppercase;padding:8px 20px;border-radius:50px;white-space:nowrap;box-shadow:0 8px 18px rgba(12,111,3,.3)}
 .plan h3{font-family:var(--font-display);font-weight:700;font-size:28px;color:var(--primary);letter-spacing:-.5px;margin-bottom:4px}
@@ -239,7 +239,7 @@ footer a{color:#cbb6e6}
 
 <!-- STICKY MOBILE CTA -->
 <div id="sticky">
-  <a href="https://pay.lowify.com.br/checkout?product_id=vDMIDQ" class="cta">Comprar agora</a>
+  <a href="#plano-completo" class="cta">Comprar agora</a>
 </div>
 
 <!-- DOWNSELL MODAL -->
@@ -282,7 +282,7 @@ footer a{color:#cbb6e6}
       <img src="ecg-capa.webp" class="shot center" width="720" height="1080" alt="Capa do e-book ECG na Ponta da Língua" loading="eager" fetchpriority="high" decoding="async">
       <img src="ecg-pagina-2.webp" class="shot right" width="720" height="1080" alt="Página interna do resumo de ECG" loading="eager" decoding="async">
     </div>
-    <a href="#planos" class="cta">Comprar agora</a>
+    <a href="#plano-completo" class="cta">Comprar agora</a>
   </div>
 </section>
 <div class="wave-div" style="background:#DDC4F8"><svg viewBox="0 0 1440 60" preserveAspectRatio="none"><path fill="#A88BEA" d="M0,32 C360,72 720,0 1080,24 C1260,36 1380,48 1440,40 L1440,60 L0,60 Z"></path></svg></div>
@@ -405,7 +405,7 @@ footer a{color:#cbb6e6}
         </ul>
         <a href="#" class="cta cta-ghost" id="btn-basic">Comprar agora</a>
       </div>
-      <div class="plan featured">
+      <div class="plan featured" id="plano-completo">
         <span class="badge">★ Mais escolhido</span>
         <h3>Plano Completo</h3>
         <p class="pdesc">O resumo + 4 bônus pra fixar de vez e arrasar na prova e no plantão.</p>
