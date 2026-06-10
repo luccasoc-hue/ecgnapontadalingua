@@ -208,10 +208,7 @@ footer a{color:#cbb6e6}
 
 /* ---------- STICKY ---------- */
 #sticky{position:fixed;left:0;right:0;bottom:0;z-index:50;background:var(--surface);box-shadow:0 -6px 22px rgba(62,7,114,.18);padding:12px 16px;display:flex;align-items:center;gap:12px;transform:translateY(110%);transition:transform .3s}
-#sticky .info{flex:1;min-width:0}
-#sticky .info b{font-family:var(--font-display);font-weight:700;font-size:16px;color:var(--text-soft);display:block;line-height:1.1}
-#sticky .info span{font-size:12px;color:var(--secondary);font-weight:700}
-#sticky .cta{padding:14px 22px;font-size:14px;white-space:nowrap}
+#sticky .cta{flex:1;padding:16px 22px;font-size:16px;white-space:nowrap}
 
 /* ---------- RESPONSIVE ---------- */
 @media(max-width:767px){
@@ -219,21 +216,30 @@ footer a{color:#cbb6e6}
   .plan.featured{order:-1}
   .guarantee{flex-direction:column;text-align:center}
   .sec{padding:52px 0 60px}
-  .mockups{max-width:340px}
-  .mock.center{width:150px}
-  .mock.left,.mock.right{width:110px}
+  .mockups{max-width:330px}
+  .shot.center{width:150px}
+  .shot.left{width:108px;transform:rotate(-8deg) translateX(22px) translateY(12px)}
+  .shot.right{width:108px;transform:rotate(8deg) translateX(-22px) translateY(12px)}
   .timer .box{min-width:60px;padding:10px 12px}
   .timer .box b{font-size:28px}
 }
 @media(min-width:768px){#sticky{display:none}}
 </style>
+<!-- UTMify Pixel -->
+<script>
+  window.pixelId = "6a28cec3d60b6cc0d9ca35c9";
+  var a = document.createElement("script");
+  a.setAttribute("async", "");
+  a.setAttribute("defer", "");
+  a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+  document.head.appendChild(a);
+</script>
 </head>
 <body>
 
 <!-- STICKY MOBILE CTA -->
 <div id="sticky">
-  <div class="info"><b>Plano Completo</b><span>R$ 19,90 • 4 bônus</span></div>
-  <a href="#planos" class="cta">Quero agora</a>
+  <a href="https://pay.lowify.com.br/checkout?product_id=vDMIDQ" class="cta">Comprar agora</a>
 </div>
 
 <!-- DOWNSELL MODAL -->
@@ -276,7 +282,7 @@ footer a{color:#cbb6e6}
       <img src="ecg-capa.webp" class="shot center" width="720" height="1080" alt="Capa do e-book ECG na Ponta da Língua" loading="eager" fetchpriority="high" decoding="async">
       <img src="ecg-pagina-2.webp" class="shot right" width="720" height="1080" alt="Página interna do resumo de ECG" loading="eager" decoding="async">
     </div>
-    <a href="#planos" class="cta">Quero baixar meu resumo</a>
+    <a href="#planos" class="cta">Comprar agora</a>
   </div>
 </section>
 <div class="wave-div" style="background:#DDC4F8"><svg viewBox="0 0 1440 60" preserveAspectRatio="none"><path fill="#A88BEA" d="M0,32 C360,72 720,0 1080,24 C1260,36 1380,48 1440,40 L1440,60 L0,60 Z"></path></svg></div>
@@ -397,7 +403,7 @@ footer a{color:#cbb6e6}
           <li class="off">Mapa mental das arritmias</li>
           <li class="off">100 questões comentadas</li>
         </ul>
-        <a href="#" class="cta cta-ghost" id="btn-basic">Quero o básico</a>
+        <a href="#" class="cta cta-ghost" id="btn-basic">Comprar agora</a>
       </div>
       <div class="plan featured">
         <span class="badge">★ Mais escolhido</span>
@@ -416,7 +422,7 @@ footer a{color:#cbb6e6}
           <li><b>+ Mapa mental das arritmias</b></li>
           <li><b>+ 100 questões comentadas</b></li>
         </ul>
-        <a href="https://pay.lowify.com.br/checkout?product_id=vDMIDQ" class="cta">Quero tudo por R$ 19,90</a>
+        <a href="https://pay.lowify.com.br/checkout?product_id=vDMIDQ" class="cta">Comprar agora</a>
       </div>
     </div>
     <p class="plan-foot">Por menos que um lanche, você resolve ECG de uma vez. Garantia de 7 dias — risco zero.</p>
